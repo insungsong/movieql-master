@@ -34,7 +34,7 @@ export const getMovie = async id => {
       movie_id: id
     }
   });
-  return `${MOVIE_DETAILS_URL}movie_id=${id}`;
+  return movie;
 };
 
 export const getSuggestions = async id => {
@@ -47,5 +47,5 @@ export const getSuggestions = async id => {
       movie_id: id
     }
   });
-  return `${MOVIE_SUGGESTIONS_URL}movie_id=${id}`;
+  return movies;
 };
